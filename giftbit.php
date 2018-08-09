@@ -20,8 +20,8 @@
       $this->client = new Giftbit\Client($auth_token);
     }
 
-    public function ping() {
-      return $this->client->ping();
+    public function ping(&$http_code = NULL) {
+      return $this->client->ping($http_code);
     }
 
   }
